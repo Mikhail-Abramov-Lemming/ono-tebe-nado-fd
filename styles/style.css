@@ -1,0 +1,322 @@
+html {
+ scroll-behavior: smooth;
+}
+
+body{
+ width: 1100px;
+ height: 757px;
+ border-color: red;
+ border-width: medium;
+}
+
+header {
+ display: grid;
+ grid-template-columns: repeat(5, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+ grid-template-areas:
+ ". . . . ."
+ "nav nav logo contacts contacts"
+ ". . . . .";
+ width: 1100px;
+ height: 293px;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-size: 18px;
+}
+
+a {
+ color: black;
+ text-decoration: none;
+}
+
+ui {
+ font-family: 'Raleway','Arial', sans-serif;
+ font-weight: 400;
+ font-size: 18px;
+}
+
+.gorizontalnii {
+ width: 392px;
+ height: 22px;
+ display: flex;
+ justify-content: space-between;
+ list-style-type: circle;
+}
+
+.verh {
+ width: 689px;
+ height: 120px;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-weight: 400;
+ font-size: 21px;
+}
+
+.niz {
+ width: 694px;
+ height: 186px;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-weight: 400;
+ font-size: 21px;
+}
+
+nav {
+ grid-area: nav;
+ align-self: center;
+ justify-self: center;
+ width: 392px;
+}
+
+address {
+ grid-area: contacts;
+ align-self: center;
+ justify-self: center;
+ width: 240px;
+ list-style-type: none;
+ font-family: 'Raleway','Arial', sans-serif;
+}
+
+logo {
+ grid-area: logo;
+ align-self: center;
+ justify-self: center;
+ width: 148px;
+}
+
+title {
+ width: 1000px;
+ height: 385px;
+}
+
+cover {
+ display: block;
+ margin-right: 30px;
+ width: 1100px;
+ height: 757px;
+ background-image: url("../images/cover.jpg");
+ background-size: cover;
+ }
+ 
+content {
+ margin-left: 50px;
+ padding-top: 165px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-rows: repeat(3, 1fr);
+ grid-template-areas:
+ "str1 . ."
+ ". str2 ."
+ ". str3 str3";
+ width: 1000px;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-size: 120px;
+ font-weight: bold;
+ color: white;
+ letter-spacing: 30px;
+}
+
+.stroka1 {
+ grid-area: str1;
+}
+
+.stroka2 {
+ grid-area: str2;
+ margin-left: 25px;
+}
+
+.stroka3 {
+ grid-area: str3;
+ margin-left: 315px;
+}
+
+text {
+ position: absolute;
+ bottom: -190px;
+ padding-left: 50px;
+ padding-bottom: 150px;
+ font-family: 'Raleway','Arial', sans-serif;
+ color: white;
+ font-weight: normal;
+ word-spacing: 20px;
+ font-size: 28px;
+}
+
+.border-button {
+ margin-left: 35px;
+ border: 1px solid white;
+ padding: 10px 31px;
+ color: white;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-weight: 400;
+ font-size: 22px;
+ text-decoration: none;
+ text-transform: uppercase;
+ background-color: #00000000;
+}
+
+main {
+ margin-top: 180px;
+ margin-left: 24px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-column-gap: 25px;
+ grid-template-rows: repeat(3, 1fr);
+ grid-template-areas:
+ "lots lots lots"
+ "fr1 fr2 fr3"
+ "more more more";
+ width: 1052px;
+ height: 723px;
+}
+
+frame1 {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-image: url("../images/card-lot-01.jpg");
+ grid-area: fr1;
+}
+
+frame2 {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-image: url("../images/card-lot-02.jpg");
+ grid-area: fr2;
+}
+
+frame3 {
+ display: flex;
+ flex-direction: column;
+ justify-content: space-between;
+ background-image: url("../images/card-lot-03.jpg");
+ grid-area: fr3;
+}
+
+more {
+ margin-top: 23px;
+ margin-left: 40px;
+ grid-area: more;
+ display: inline;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-weight: normal;
+ font-size: 20px;
+ width: 192px;
+ height: 25px;
+}
+
+about {
+ margin-left: 24px;
+ margin-top: 120px;
+ display: grid;
+ grid-template-columns: repeat(2, 1fr);
+}
+
+logo-column {
+ margin-top: 35px;
+ margin-left: 47px;
+ display: block;
+ width: 240px;
+ height: 240px;
+ background-color: black;
+ border-radius: 120px;
+}
+
+logo-white {
+ display: block;
+ position: absolute;
+ width: 148px;
+ height: 114px;
+ padding-top: 64px;
+ padding-left: 48px;
+}
+
+description-block {
+ margin-top: 110px;
+ margin-right: 25px;
+ display: grid;
+ width: 693px;
+ height: 449px; 
+}
+
+footer {
+ margin-top: 180px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-template-areas:
+ "x1 x2 x3";
+ align-items: start;
+ font-family: 'Raleway','Arial', sans-serif;
+ font-size: 18px;
+ list-style-type: none;
+ width: 1100px;
+ height: 180px;
+}
+
+.contacts-footer {
+ align-self: start;
+ margin-left: 50px;
+ grid-area: x1;
+ width: 265px;
+ height: 98px;
+}
+
+menu {
+ margin-top: 0px;
+ grid-area: x2;
+ align-self: start;
+ justify-self: center;
+ list-style-type: none;
+ width: 164px;
+ height: 64px;
+}
+
+aside {
+ grid-area: x3;
+ margin-left: 87px;
+ display: grid;
+ grid-template-columns: repeat(3, 1fr);
+ grid-column-gap: 48px;
+ width: 240px;
+ height: 48px;
+}
+
+.card {
+ width: 334px;
+ height: 596px;
+ color: white;
+ background-position: 50%;
+ background-size: cover;
+}
+
+.zagolovok {
+ margin-top: 40px;
+ margin-left: 40px;
+ width: 254px;
+ font-family:  'Raleway','Arial', sans-serif;
+ font-weight: bold;
+ font-size: 22px;
+ text-transform: uppercase;
+ text-decoration: underline solid 1px;
+}
+
+.opisanie {
+ margin-bottom: 40px;
+ margin-left: 40px;
+ width: 254px;
+ font-family:  'Raleway','Arial', sans-serif;
+ font-size: 20px;
+}
+
+.description {
+ font-family:  'Raleway','Arial', sans-serif;
+ font-weight: bold;
+ font-size: 40px;
+ text-transform: uppercase;
+}
+
+.box {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+
