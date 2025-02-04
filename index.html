@@ -1,39 +1,42 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="ru" xmlns="http://www.w3.org/1999/xhtml">
   <head>
+    <title>
+        Оно тебе надо!!!
+    </title>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./styles/style.css"/>
-    <link rei="stylesheet" href="./fonts/fonts.css"/>
+    <link href="./styles/style.css" rel="stylesheet" />
+    <link href="./fonts/fonts.css" rel="stylesheet"/>
   </head>
   <body>
-       <header id="главная">
+       <header id="main">
           <nav>
-            <ui class="gorizontalnii">
+            <ui class="horizontal">
                 <li>
                    главная
                 </li>
                 <li>
-                   <a href="#лоты">
+                   <a href="#lots">
                       <u>
-                         посмотреть лоты
+                         Посмотреть лоты
                       </u>
                    </a>
                 </li>
                 <li>
-                   <a href="#об аукционе">
+                   <a href="#about the auction">
                       <u>
-                         об аукционе
+                         Об аукционе
                       </u>
                    </a>
                 </li>
             </ui>
          </nav>  
          <logo>
-            <img src="images/logo-black.svg" alt="в чёрной рамке написано с верху в нихз оно тебе надо" width="148px" height="105px">
+            <img src="images/logo-black.svg" alt="в чёрной рамке написано с верху в низ оно тебе надо" width="148px" height="105px">
          </logo>
-            <address>
+            <div>
                <ui class="contacts">
                   <li>
                      <u>
@@ -46,92 +49,92 @@
                      </u>
                   </li> 
                   <li>
-                     наб. Принсенграхт 263-
+                     Наб. Принсенграхт 263-
                   </li>
                   <li>
                      265, Амстердам
                   </li>
-               </ui>   
-           </address>
+               </ui>
+           </div>
        </header>
-          <cover>
-             <content>
-                <ono class="stroka1">
-                   оно
-                </ono>
-                <nado class="stroka2">
-                   тебе
-                </nado>
-                <mne class="stroka3">
-                   надо
-                </mne>
-             </content>
+          <section class="cover">
+             <div class="content">
+                <div class="string1">
+                   Оно
+                </div>
+                <div class="string2">
+                   Тебе
+                </div>
+                <div class="string3">
+                   Надо
+                </div>
+             </div>
              <text>
                 <p>
-                   аукцион вещей, в которые никто не верил 
+                   Аукцион вещей, в которые никто не верил
                    <a href="#" class="border-button">
                       сделать ставку
                    </a>
                 </p>
              </text>   
-          </cover>
+          </section>
        <main>
-          <h1 id="лоты" class="lots">лоты</h1>
-          <frame1 class="card">
-              <h1 class="zagolovok">
+          <h1 id="lots" class="lots">лоты</h1>
+              <div class="frame1">
+              <h1 class="card_heading">
                  Фильм режиссёра, который бросил киношколу
               </h1>
-              <p class="opisanie">
+              <p class="card_description">
                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
               </p>
-          </frame1>
-          <frame2 class="card">
-             <h1 class="zagolovok">
+              </div>
+             <div class="frame2">
+             <h1 class="card_heading">
                 Книга, где описан один скучный день из жизни рекламного агента
              </h1>
-             <p class="opisanie">
+             <p class="card_description">
                 Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
              </p>
-          </frame2>
-          <frame3 class="card">
-             <h1 class="zagolovok">
+             </div>
+             <div class="frame3">
+             <h1 class="card_heading">
                 Картина, которую повторит даже 5-летний сын маминой подруги
              </h1>
-             <p class="opisanie">
+             <p class="card_description">
                 Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из революционных работ Кандинского?
-             </p>   
-          </frame3> 
-          <more>
-             <a href="#" class="link-lots">
-                <u>
-                   посмотреть больше
-                </u>   
-             </a>
-          </more>
+             </p>
+             </div>
        </main>
-       <about>
-          <logo-column>
-             <logo-white>
-                <img src="images/logo-white.svg" width="148px" height="114px">
-             </logo-white>
-          </logo-column>
-             <description-block>
-                <h1 id="об аукционе" class="description">
-                   об аукционе
+       <div>
+           <a href="#" class="link-lots">
+               <u>
+                   посмотреть больше
+               </u>
+           </a>
+       </div>
+       <section class="about">
+          <div class="logo-column">
+             <div class="logo-white">
+                <img src="images/logo-white.svg" width="148px" height="114px" alt="Логотип с надписью оно тебе надо">
+             </div>
+          </div>
+             <div class="description-block">
+                <h1 id="about the auction" class="description">
+                   Об аукционе
                 </h1>
                    <article>
-                      <p class="verh">
+                      <p class="from_the_top">
                          Здесь вы не встретите очередное пафосное собрание невероятно дорогого антиквариата. Наши лоты вообще не должны были попасть ни на один аукцион. Потому что кому нужен дневник девочки-подростка или картина, которую может нарисовать даже ребёнок? Кому нужны все эти странные вещи, созданные любителями?
                       </p>
-                      <p class="niz">
-                         Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но,несмотря
+                      <p class="From_the_bottom">
+                         Слишком сложные или, наоборот, слишком простые. Опережающие своё время. В пух и прах растерзанные критиками. Непринятые и непонятые. Когда-то они казались просто неудачными. Но, несмотря
 на критику, кажущуюся простоту или сложность, сейчас без этих лотов невозможно представить современную культуру. Когда в эти вещи не верил никто, продолжали верить их создатели. И сейчас эти лоты стали культовыми. 
                       </p>
                    </article>
-                </description-block>
-             </about>
+                </div>
+             </section>
           <footer>
-             <address class="contacts-footer">
+             <div class="contacts-footer">
                 <ui>
                    <li>
                       <u>
@@ -144,31 +147,31 @@
                    </u>
                 </li> 
                 <li>
-                   наб. Принсенграхт 263- 265
+                   Наб. Принсенграхт 263- 265
                 </li>
                 <li>
                    Амстердам
                 </li>
              </ui>
-          </address>
+          </div>
           <menu>  
              <ui>
                 <li class="box">
-                   <a href="#главная">
+                   <a href="#main">
                       главная
                    </a>
                 </li>
                 <li class="box">
-                   <a href="#лоты">
+                   <a href="#lots">
                       <u>
-                         посмотреть лоты
+                         Посмотреть лоты
                       </u>
                    </a>
                 </li>
                 <li class="box">
-                   <a href="#об аукционе">
+                   <a href="#about the auction">
                       <u>
-                         об аукционе
+                         Об аукционе
                       </u>
                    </a>
                 </li>
