@@ -29,7 +29,7 @@ a {
 }
 
 u {
- text-decoration: underline;
+ text-decoration: underline solid 1px;
  border-bottom: 1px;
 }
 
@@ -40,12 +40,64 @@ ui {
 }
 
 .horizontal {
+ margin-top: -3px;
+ margin-left: 23px;
  width: 392px;
  height: 22px;
- margin-left: 18px;
  display: flex;
+ font-family: 'Raleway','Arial', sans-serif;
  justify-content: space-between;
- list-style-type: circle;
+ text-transform: lowercase;
+}
+
+.top {
+ margin-top: 0px;
+ margin-left: 2px;
+}
+
+.view_lots {
+ margin-top: 0px;
+ margin-left: -2px;
+}
+
+.about_the_auction::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 156px;
+ bottom: 814px;
+ width: 150px;
+ height: 1px;
+}
+
+.about_the_auction::before {
+ content: 'o';
+ position: absolute;
+ font-size: 12px;
+ width: 15px;
+ height: 15px;
+ left: 136px;
+ bottom: 817px;
+}
+
+.view_lots::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 339px;
+ bottom: 814px;
+ width: 109px;
+ height: 1px;
+}
+
+.view_lots::before {
+ content: 'o';
+ position: absolute;
+ font-size: 12px;
+ width: 15px;
+ height: 15px;
+ left: 319px;
+ bottom: 817px;
 }
 
 .from_the_top {
@@ -77,12 +129,17 @@ nav {
  width: 392px;
 }
 
-address {
+.contacts {
+ width: 230px;
+ height: 98px;
+ margin-top: 4px;
+ margin-left: 151px;
+ display: flex;
+ flex-direction: column;
  grid-area: contacts;
- align-self: center;
- justify-self: center;
- width: 240px;
- list-style-type: none;
+ line-height: 1.38;
+ letter-spacing: -0.2px;
+ word-spacing: 1px;
  font-family: 'Raleway','Arial', sans-serif;
 }
 
@@ -105,6 +162,7 @@ title {
  height: 757px;
  background-image: url("../images/cover.jpg");
  background-size: cover;
+ background-position: -136px 0px;
  }
  
 .content {
@@ -194,8 +252,8 @@ main {
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-01.jpg");
- background-position: 50%;
- background-size: cover;
+ background-size: 164% 100%;
+ background-position: -106px 0px;
  grid-area: fr1;
 }
 
@@ -205,8 +263,8 @@ main {
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-02.jpg");
- background-position: 50%;
- background-size: cover;
+ background-size: 162% 100%;
+ background-position: -103px 0px;
  grid-area: fr2;
 }
 
@@ -216,8 +274,8 @@ main {
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-03.jpg");
- background-position: 50%;
  background-size: cover;
+ background-position: -117px 0px;
  grid-area: fr3;
 }
 
@@ -243,6 +301,36 @@ main {
  font-size: 20px;
  width: 192px;
  height: 25px;
+}
+
+.link-lots::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 71px;
+ bottom: -986px;
+ width: 191px;
+ height: 1px;
+}
+
+.box::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 486px;
+ bottom: -1923px;
+ width: 145px;
+ height: 1px;
+}
+
+ui::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 505px;
+ bottom: -1944px;
+ width: 107px;
+ height: 1px;
 }
 
 .about {
@@ -300,10 +388,17 @@ footer {
 
 .contacts-footer {
  align-self: start;
- margin-left: 59px;
+ margin-left: 60px;
+ margin-top: -2px;
  grid-area: x1;
- width: 265px;
+ width: 240px;
  height: 98px;
+ display: flex;
+ flex-direction: column;
+ line-height: 1.38;
+ letter-spacing: -0.17px;
+ word-spacing: 1px;
+ font-family: 'Raleway','Arial', sans-serif;
 }
 
 menu {
@@ -329,8 +424,8 @@ aside {
 }
 
 .card_heading {
- margin-top: 49px;
- margin-left: 40px;
+ margin-top: 47px;
+ margin-left: 41px;
  width: 254px;
  flex-direction: column;
  justify-content: space-between;
@@ -343,8 +438,8 @@ aside {
 }
 
 .card_description {
- margin-bottom: 48px;
- margin-left: 40px;
+ margin-bottom: 51px;
+ margin-left: 41px;
  width: 254px;
  flex-direction: column;
  justify-content: space-between;
@@ -365,5 +460,47 @@ aside {
  flex-direction: column;
  align-items: center;
 }
+
+.telephone::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 818px;
+ bottom: 849px;
+ width: 132px;
+ height: 1px;
+}
+
+.email::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 817px;
+ bottom: 826px;
+ width: 132px;
+ height: 1px;
+}
+
+.contacts-footer::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 57px;
+ bottom: -1903px;
+ width: 132px;
+ height: 1px;
+}
+
+.address::after {
+ content: '';
+ position: absolute;
+ background: black;
+ left: 58px;
+ bottom: -1927px;
+ width: 131px;
+ height: 1px;
+}
+
+
 
 
