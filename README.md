@@ -1,1 +1,1 @@
-https://git@github.com:Mikhail-Abramov-Lemming/ono-tebe-nado.git
+git@github.com:Mikhail-Abramov-Lemming/ono-tebe-nado-fd.git
