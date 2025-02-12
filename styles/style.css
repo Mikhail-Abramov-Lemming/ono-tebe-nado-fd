@@ -56,52 +56,67 @@ ui {
 }
 
 .view_lots {
- margin-top: 0px;
- margin-left: -2px;
+ display: flex;
+ width: 114px;
+ height: 22px;
+ margin-top: -1px;
+ margin-left: 163px;
+}
+
+.about_the_auction{
+ display: flex;
+ width: 130px;
+ height: 22px;
+ margin-top: -1px;
+ margin-left: 105px;
 }
 
 .about_the_auction::after {
  content: '';
- position: absolute;
  background: black;
- left: 156px;
- bottom: 814px;
- width: 150px;
+ margin-top: 20px;
+ margin-left: -107px;
+ width: 108px;
  height: 1px;
 }
 
 .about_the_auction::before {
  content: 'o';
- position: absolute;
  font-size: 12px;
- width: 15px;
+ width: 20px;
  height: 15px;
- left: 136px;
- bottom: 817px;
+ margin-top: 3px;
+ margin-left: -94px;
 }
 
 .view_lots::after {
  content: '';
- position: absolute;
  background: black;
- left: 339px;
- bottom: 814px;
- width: 109px;
+ margin-top: 20px;
+ margin-left: -147px;
+ width: 151px;
  height: 1px;
 }
 
 .view_lots::before {
  content: 'o';
- position: absolute;
  font-size: 12px;
- width: 15px;
+ width: 19px;
  height: 15px;
- left: 319px;
- bottom: 817px;
+ margin-top: 3px;
+ margin-left: -150px;
+}
+
+.lots-border{
+ white-space: nowrap;
+}
+
+.about-the-auction-border{
+ white-space: nowrap;
 }
 
 .from_the_top {
- margin-top: 1px;
+ margin-top: -65px;
  width: 689px;
  height: 120px;
  font-family: 'Raleway','Arial', sans-serif;
@@ -112,9 +127,10 @@ ui {
 }
 
 .From_the_bottom {
- padding-top: 5px;
- width: 694px;
- height: 186px;
+ padding-top: 79px;
+ margin-left: -688px;
+ width: 693px;
+ height: 168px;
  font-family: 'Raleway','Arial', sans-serif;
  letter-spacing: 0px;
  word-spacing: 0px;
@@ -143,7 +159,7 @@ nav {
  font-family: 'Raleway','Arial', sans-serif;
 }
 
-logo {
+ono {
  grid-area: logo;
  align-self: center;
  justify-self: center;
@@ -156,7 +172,7 @@ title {
 }
 
 .cover {
- display: block;
+ display: flex;
  margin-right: 30px;
  width: 1100px;
  height: 757px;
@@ -191,22 +207,20 @@ title {
 .string2 {
  grid-area: str2;
  text-transform: uppercase;
- margin-top: 6px;
+ margin-top: -64px;
  margin-left: 14px;
 }
 
 .string3 {
  grid-area: str3;
  text-transform: uppercase;
- margin-top: 12px;
+ margin-top: -127px;
  margin-left: 298px;
 }
 
 text {
- position: absolute;
- bottom: -189px;
- padding-left: 48px;
- padding-bottom: 143px;
+ margin-top: 665px;
+ margin-left: -1002px;
  font-family: 'Raleway','Arial', sans-serif;
  letter-spacing: -1.9px;
  color: white;
@@ -249,6 +263,7 @@ main {
 .frame1 {
  height: 597px;
  display: flex;
+ margin-top: 25px;
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-01.jpg");
@@ -260,6 +275,7 @@ main {
 .frame2 {
  height: 597px;
  display: flex;
+ margin-top: 25px;
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-02.jpg");
@@ -271,6 +287,7 @@ main {
 .frame3 {
  height: 597px;
  display: flex;
+ margin-top: 25px;
  flex-direction: column;
  justify-content: space-between;
  background-image: url("../images/card-lot-03.jpg");
@@ -293,9 +310,11 @@ main {
 }
 
 .link-lots {
+ white-space: nowrap;
+ margin-top: 0px;
  margin-left: 63px;
  grid-area: more;
- display: inline;
+ display: flex;
  font-family: 'Raleway','Arial', sans-serif;
  font-weight: 400;
  font-size: 20px;
@@ -305,30 +324,27 @@ main {
 
 .link-lots::after {
  content: '';
- position: absolute;
  background: black;
- left: 71px;
- bottom: -986px;
+ margin-top: 22px;
+ margin-left: -191px;
  width: 191px;
  height: 1px;
 }
 
-.box::after {
+.box-lots::after {
  content: '';
- position: absolute;
  background: black;
- left: 486px;
- bottom: -1923px;
+ margin-top: 0px;
+ margin-left: 0px;
  width: 145px;
  height: 1px;
 }
 
-ui::after {
+.box-about::after {
  content: '';
- position: absolute;
  background: black;
- left: 505px;
- bottom: -1944px;
+ margin-top: -2px;
+ margin-left: 0px;
  width: 107px;
  height: 1px;
 }
@@ -343,7 +359,7 @@ ui::after {
 .logo-column {
  margin-top: 43px;
  margin-left: 45px;
- display: block;
+ display: flex;
  width: 240px;
  height: 240px;
  background-color: black;
@@ -352,15 +368,15 @@ ui::after {
 
 .logo-white {
  display: block;
- position: absolute;
+ background-size: cover;
  width: 148px;
  height: 114px;
- padding-top: 64px;
- padding-left: 48px;
+ margin-top: 62px;
+ margin-left: 48px;
 }
 
 .description-block {
- margin-top: 110px;
+ margin-top: 142px;
  margin-right: 25px;
  display: grid;
  width: 693px;
@@ -368,11 +384,12 @@ ui::after {
 }
 
 article {
- margin-top: 67px;
+ display: flex;
+ margin-top: 100px;
 }
 
 footer {
- margin-top: 226px;
+ margin-top: 192px;
  margin-left: -10px;
  display: grid;
  grid-template-columns: repeat(3, 1fr);
@@ -402,8 +419,10 @@ footer {
 }
 
 menu {
+ display: flex;
+ white-space: nowrap;
  margin-top: 0px;
- margin-left: -21px;
+ margin-left: -43px;
  grid-area: x2;
  align-self: start;
  justify-self: center;
@@ -424,7 +443,7 @@ aside {
 }
 
 .card_heading {
- margin-top: 47px;
+ margin-top: 50px;
  margin-left: 41px;
  width: 254px;
  flex-direction: column;
@@ -461,46 +480,60 @@ aside {
  align-items: center;
 }
 
+.box-lots {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.box-about {
+ display: flex;
+ flex-direction: column;
+ align-items: center;
+}
+
+.telephone{
+ display: flex;
+ white-space: nowrap;
+ margin-top: -1px;
+ margin-left: -1px;
+ width: 240px;
+ height: 24px;
+}
+
 .telephone::after {
  content: '';
- position: absolute;
  background: black;
- left: 818px;
- bottom: 849px;
+ margin-top: 22px;
+ margin-left: -132px;
  width: 132px;
  height: 1px;
+}
+
+.email {
+ display: flex;
+ white-space: nowrap;
+ margin-top: 0px;
+ margin-left: -1px;
+ width: 240px;
+ height: 24px;
 }
 
 .email::after {
  content: '';
- position: absolute;
  background: black;
- left: 817px;
- bottom: 826px;
+ margin-top: 23px;
+ margin-left: -129px;
  width: 132px;
  height: 1px;
 }
 
-.contacts-footer::after {
- content: '';
- position: absolute;
- background: black;
- left: 57px;
- bottom: -1903px;
- width: 132px;
- height: 1px;
+.address-footer{
+ width: 264px;
+ height: 98px;
+ margin-top: 4px;
+ margin-left: 1px;
 }
-
-.address::after {
- content: '';
- position: absolute;
- background: black;
- left: 58px;
- bottom: -1927px;
- width: 131px;
- height: 1px;
-}
-
 
 
 
