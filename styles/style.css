@@ -1,21 +1,23 @@
 header {
  display: grid;
+ margin-bottom: 93px;
  grid-template-columns: repeat(5, 1fr);
- grid-template-rows: repeat(3, 1fr);
+ grid-template-rows: repeat(2, 1fr);
  grid-template-areas:
  ". . . . ."
- "nav nav logo contacts contacts"
- ". . . . .";
+ "nav nav logo contacts contacts";
  width: 1100px;
  font-family: 'Raleway','Arial', sans-serif;
  font-size: 18px;
- padding-bottom: 18px;
 }
 
 a {
  color: black;
- text-decoration: none;
  font-family: 'Raleway','Arial', sans-serif;
+}
+
+.active_link {
+ text-decoration: none;
 }
 
 address {
@@ -26,9 +28,9 @@ address {
 }
    
 
-.row {
+.header-option {
  display: flex;
- gap: 33px;
+ gap: 21px;
  flex-direction: row;
  text-transform: lowercase;
  list-style-type: circle;
@@ -40,37 +42,16 @@ address {
 
 .top {
  padding-bottom: 2px;
- margin-left: 0px;
+ margin-left: 2px;
  list-style-type: none;
  text-decoration: none;
 }
 
-.lots-border {
+.nav-link {
  display: flex;
  flex-direction: column;
+ text-decoration: underline;
  white-space: nowrap;
-}
-
-.lots-border::after {
- content: '';
- background: black;
- margin: auto;
- width: 149px;
- height: 1px;
-}
-
-.about-the-auction-border {
- display: flex;
- flex-direction: column;
- white-space: nowrap;
-}
-
-.about-the-auction-border::after {
- content: '';
- background: black;
- margin: auto;
- width: 109px;
- height: 1px;
 }
 
 .from_the_article {
@@ -83,31 +64,10 @@ address {
  font-size: 20px;
 }
 
-/*.from_the_top {
- padding-bottom: 24px;
- width: 689px;
- font-family: 'Raleway','Arial', sans-serif;
- letter-spacing: 0.1px;
- word-spacing: -0.7px;
- font-weight: 400;
- font-size: 20px;
-}
-
-.From_the_bottom {
- margin-top: 1px;
- padding-right: 6px;
- width: 693px;
- font-family: 'Raleway','Arial', sans-serif;
- letter-spacing: 0px;
- word-spacing: 0px;
- font-weight: 400;
- font-size: 20px;
-}
-*/ 
-
 .header-ul {
  grid-area: nav;
- margin-left: 49px;
+ margin-left: 47px;
+ margin-bottom: 4px;
  align-self: center;
  justify-self: center;
  width: 392px;
@@ -116,6 +76,7 @@ address {
 .contacts {
  grid-area: contacts;   
  width: 230px;
+ padding-top: 0px;
  margin-top: 4px;
  margin-left: 151px;
  display: flex;
@@ -129,6 +90,7 @@ address {
 
 .logo {
  grid-area: logo;
+ margin-top: 0px;
  align-self: center;
  justify-self: center;
  width: 148px;
@@ -153,41 +115,42 @@ address {
  letter-spacing: 30px;
 }
 
-.string-a {
+.if {
  display: inline-block;
  text-transform: uppercase;
- margin-top: 128px;
+ margin-top: 164px;
  margin-left: 49px;
 }
 
-.string-b {
+.tu_you {
  display: inline-block;
  text-transform: uppercase;
- margin-top: 17px;
+ margin-top: 19px;
  margin-left: 380px;
 }
 
-.string-c {
+.need {
  display: inline-block;
  text-transform: uppercase;
- margin-top: 17px;
+ margin-top: 16px;
  margin-left: 663px;
 }
 
 .roll {
  display: flex;
  flex-wrap: wrap;
- justify-content: space-between;
+ justify-content: start;
+ list-style-type: none;
  gap: 25px;
- margin-top: 158px;
+ margin-top: 27px;
  margin-left: 23px;
  width: 1052px;
 }
 
 .text {
  display: inline-block;    
- margin-top: 118px;
- margin-bottom: 58px;
+ margin-top: 115px;
+ margin-bottom: 60px;
  margin-left: 48px;
  font-family: 'Raleway','Arial', sans-serif;
  letter-spacing: -1.9px;
@@ -223,10 +186,26 @@ address {
  background-position: -107px 0px;   
 }
 
+.image_a {
+ background-image: url(../images/card-lot-01.jpg);
+}
+
+.image_b {
+ background-image: url(../images/card-lot-02.jpg);
+}
+
+.image_c {
+ background-image: url(../images/card-lot-03.jpg);
+}
+/*
+.image_? {
+ background-image: url(?);
+}
+*/
 .lots {
- margin-top: 23px;
- margin-left: 40px;
- display: inline;
+ margin-top: 182px;
+ margin-left: 64px;
+ display: inline-block;
  font-family: 'Raleway','Arial', sans-serif;
  text-transform: uppercase;
  font-weight: 700;
@@ -236,41 +215,15 @@ address {
 
 .link-lots {
  white-space: nowrap;
- margin-top: 11px;
- margin-left: 41px;
+ margin-top: 28px;
+ margin-left: 65px;
  grid-area: more;
  display: flex;
  font-family: 'Raleway','Arial', sans-serif;
+ text-decoration: underline;
  font-weight: 400;
  font-size: 20px;
  width: 192px;
-}
-
-.link-lots::after {
- content: '';
- background: black;
- margin-top: 22px;
- margin-left: -191px;
- width: 191px;
- height: 1px;
-}
-
-.box-lots::after {
- content: '';
- background: black;
- margin-top: 0px;
- margin-left: 0px;
- width: 145px;
- height: 1px;
-}
-
-.box-about::after {
- content: '';
- background: black;
- margin-top: -2px;
- margin-left: 0px;
- width: 107px;
- height: 1px;
 }
 
 .about {
@@ -299,7 +252,7 @@ address {
  margin-left: 48px;
 }
 
-article {
+.completion {
  margin-top: 142px;
  margin-right: 25px;
  display: grid;
@@ -314,6 +267,7 @@ article {
 
 footer {
  margin-top: 158px;
+ margin-bottom: 76px;
  padding-right: 15px;
  display: grid;
  grid-template-columns: repeat(3, 1fr);
@@ -362,7 +316,7 @@ footer {
 }
 
 .card_heading {
- margin-top: 50px;
+ margin-top: 47px;
  margin-left: 41px;
  width: 254px;
  flex-direction: column;
@@ -375,8 +329,17 @@ footer {
  text-decoration: underline solid 1px;
 }
 
+.overlay {
+ filter: blur(0);
+ transition: 3s;
+}
+
+.overlay:hover {
+ filter: blur(3px);
+}
+
 .card_description {
- margin-bottom: 43px;
+ margin-bottom: 48px;
  margin-left: 41px;
  width: 254px;
  flex-direction: column;
@@ -393,11 +356,10 @@ footer {
  text-transform: uppercase;
 }
 
-.column {
+.footer-option {
  display: flex;
  flex-direction: column;
  align-items: center;
- display: flex;
  text-transform: lowercase;
  list-style-type: none;
  justify-content: space-between;
@@ -405,41 +367,3 @@ footer {
  font-weight: 400;
  font-size: 18px;
 }
-
-.telephone {
- display: flex;
- white-space: nowrap;
- margin-top: -1px;
- margin-left: -1px;
- width: 240px;
- height: 24px;
-}
-
-.telephone::after {
- content: '';
- background: black;
- margin-top: 22px;
- margin-left: -132px;
- width: 132px;
- height: 1px;
-}
-
-.email {
- display: flex;
- white-space: nowrap;
- margin-top: 0px;
- margin-left: -1px;
- width: 240px;
- height: 24px;
-}
-
-.email::after {
- content: '';
- background: black;
- margin-top: 23px;
- margin-left: -129px;
- width: 132px;
- height: 1px;
-}
-
-
