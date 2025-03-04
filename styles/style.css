@@ -10,7 +10,7 @@ header {
  }
 
 .header__location {
- margin-top: 110px;
+ margin-top: 92px;
  margin-bottom: 93px;
 }
 
@@ -226,6 +226,7 @@ a {
 }
 
 .content__description {
+  line-height: 1.2;
   flex-direction: column;
   justify-content: space-between;
   font-family:  'Raleway','Arial', sans-serif;
@@ -313,6 +314,7 @@ a {
 }
 
 .article__item {
+  line-height: 1.2;
   width: 693px;
   font-family: 'Raleway','Arial', sans-serif;
   letter-spacing: 0.1px;
