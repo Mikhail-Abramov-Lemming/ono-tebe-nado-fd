@@ -1,9 +1,8 @@
 header {
  display: grid;
  grid-template-columns: repeat(5, 1fr);
- grid-template-rows: repeat(2, 1fr);
+ grid-template-rows: repeat(1, 1fr);
  grid-template-areas:
- ". . . . ."
  "nav nav logo contacts contacts";
  width: 1100px;
  font-family: 'Raleway','Arial', sans-serif;
@@ -11,6 +10,7 @@ header {
  }
 
 .header__location {
+ margin-top: 110px;
  margin-bottom: 93px;
 }
 
@@ -24,12 +24,12 @@ a {
 }
 
 
-.header__nav {
+.nav {
   align-self: center;
   justify-self: center;
  }
 
-.header__nav--location {
+.nav--header {
   grid-area: nav;
   margin-left: 47px;
   margin-bottom: 4px;
@@ -51,7 +51,7 @@ a {
  justify-content: space-between;
 }
 
-.nav__item--marker-off {
+.nav__item {
   padding-bottom: 2px;
   margin-left: 2px;
   list-style-type: none;
@@ -68,7 +68,7 @@ a {
   width: 148px;
 }
 
-.header__address {
+.address {
   display: flex;
   white-space: nowrap;
   flex-direction: column;
@@ -79,7 +79,7 @@ a {
   font-family: 'Raleway','Arial', sans-serif;
 }
 
-.header__address--location {
+.address--header {
   grid-area: contacts;
   width: 230px;
   padding-top: 0px;
@@ -107,25 +107,25 @@ a {
   letter-spacing: 30px;
 }
 
-.cover__content--align-text-if {
+.cover__content--align-text-start {
   display: inline-block;
-  line-height:184%;
+  padding: 163px 0px 0px 51px;
   width: 100%;
   text-align:start;
   text-transform: uppercase;
 }
 
-.cover__content--align-text-tu_you {
+.cover__content--align-text-center {
   display: inline-block;
-  line-height:184%;
+  padding: 18px 0px 0px 31px;
   width: 100%;
   text-align:center;
   text-transform: uppercase;
 }
 
-.cover__content--align-text-need {
+.cover__content--align-text-end {
   display: inline-block;
-  line-height:184%;
+  padding: 18px 19px 0px 0px;
   width: 100%;
   text-align:end;
   text-transform: uppercase;
@@ -145,7 +145,7 @@ a {
 .text--location {
   margin-top: 115px;
   margin-bottom: 60px;
-  margin-left: 48px;
+  margin-left: 50px;
 }
 
 .text__border-button {
@@ -166,7 +166,7 @@ a {
   padding: 12px 31px;
 }
 
-.lots {
+.title {
   display: flex;
   font-family: 'Raleway','Arial', sans-serif;
   text-transform: uppercase;
@@ -174,11 +174,11 @@ a {
   font-size: 40px;
 }
 
- .lots--location {
+ .title--location {
    align-items: flex-end;
    flex-direction: row-reverse;
    width: 184px;
-   height:229px
+   margin-top:181px;
 }
 
 .card {
@@ -239,19 +239,19 @@ a {
   width: 254px;
 }
 
-.card__image--a {
+.card__content--film {
   background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/card-lot-01.jpg);
 }
 
-.card__content__image--b {
+.card__content--book {
   background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/card-lot-02.jpg);
 }
 
-.card__content__image--c{
+.card__content--picture {
   background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(../images/card-lot-03.jpg);
 }
 /*
-.card__content__image--?{
+.card__content--?{
   background-image: linear-gradient(rgba(0,0,0,.6), rgba(0,0,0,.6)), url(?);
 }
 */
@@ -336,14 +336,14 @@ footer {
   width: 1100px;
 }
 
-.header__address--location-footer {
+.address--footer {
   margin-left: 51px;
   padding-bottom: 2px;
   grid-area: x1;
   width: 240px;
 }
 
-.header__nav--location-footer {
+.nav--footer {
   margin-bottom: 91px;
   margin-left: 14px;
   grid-area: x2;

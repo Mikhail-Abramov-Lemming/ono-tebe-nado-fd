@@ -13,9 +13,9 @@
   </head>
   <body>
     <header class="header__location" id="main">
-      <nav class="header__nav header__nav--location">
+      <nav class="nav nav--header">
         <ul class="nav__menu nav__menu--row">
-          <li class="nav__item nav__item--marker-off">
+          <li class="nav__item">
             <a class="active-link" href="#">
               главная
             </a>
@@ -30,12 +30,12 @@
               Об аукционе
             </a>
           </li>
-          </ul>
+        </ul>
       </nav>
       <div class="header__logo header__logo--location">
         <img src="images/logo-black.svg" alt="в чёрной рамке написано с верху в низ оно тебе надо" width="148" height="105" />
       </div>
-      <address class="header__address header__address--location">
+      <address class="address address--header">
         <a href="tel:+9-999-555-5555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
           <p>
@@ -47,13 +47,13 @@
     <main>
       <section class="cover cover--location">
         <h1 class="cover__content">
-          <span class="cover__content--align-text-if">
+          <span class="cover__content--align-text-start">
             Оно
           </span>
-          <span class="cover__content--align-text-tu_you">
+          <span class="cover__content--align-text-center">
             Тебе
           </span>
-          <span class="cover__content--align-text-need">
+          <span class="cover__content--align-text-end">
             Надо
           </span>
         </h1>
@@ -67,58 +67,58 @@
         </div>
       </section>
       <section>
-        <h2 id="lots" class="lots lots--location">лоты</h2>
+        <h2 id="lots" class="title title--location">лоты</h2>
         <ul class="card card--location">
           <li>
-            <article class="card__content card__content--location card__image--a">
-
-              <a class="active-link" href="#">
+            <a class="active-link" href="#">
+              <article class="card__content card__content--location card__content--film">
                 <h3 class="content__heading content__heading--location">
                   Фильм режиссёра, который бросил киношколу
                 </h3>
-              </a>
-              <p class="content__description content__description--location">
-                Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
-              </p>
-            </article>
+                <p class="content__description content__description--location">
+                  Не просто бросил, а ушёл с первой лекции. Какой была бы ваша ставка, если бы вы не знали, что режиссёр — Пол Томас Андерсон?
+                </p>
+              </article>
+            </a>
           </li>
           <li>
-            <article class="card__content card__content--location card__content__image--b">
-              <a class="active-link" href="#">
+            <a class="active-link" href="#">
+              <article class="card__content card__content--location card__content--book">
                 <h3 class="content__heading content__heading--location">
                   Книга, где описан один скучный день из жизни рекламного агента
                 </h3>
-              </a>
-              <p class="content__description content__description--location">
-                Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это
-                всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
-              </p>
-            </article>
+                <p class="content__description content__description--location">
+                  Объёмом почти в тысячу страниц. Иногда без знаков препинания и с переходами на древнеанглийский. В ней одновременно рассказывается о 16 июня 1904 года и об истории литературы, начиная с античных времён. И это
+                  всё накладывается на эпическую поэму Гомера. Сколько бы вы поставили на «Улисса» Джеймса Джойса?
+                </p>
+              </article>
+            </a>
           </li>
           <li>
-            <article class="card__content card__content--location card__content__image--c">
-              <a class="active-link" href="#">
+            <a class="active-link" href="#">
+              <article class="card__content card__content--location card__content--picture">
                 <h3 class="content__heading content__heading--location">
                   Картина, которую повторит даже 5-летний сын маминой подруги
                 </h3>
-              </a>
-              <p class="content__description content__description--location">
-                Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из
-                революционных работ Кандинского?
-              </p>
-            </article>
+                <p class="content__description content__description--location">
+                  Ну действительно, там линия, тут кружочек, а здесь и вовсе что-то похожее на инфузорию-туфельку. Никаких полей, лесов, котиков... Сколько бы вы на такое поставили, если бы не знали, что это — одна из
+                  революционных работ Кандинского?
+                </p>
+              </article>
+            </a>
           </li>
       <!--<li>
-            <article class="card__content card__content--location card__content__image--?">
-              <a class="active-link" href="#">
+            <a class="active-link" href="#">
+              <article class="card__content card__content--location card__content--?">
                 <h3 class="content__heading content__heading--location">
                   ?
                 </h3>
-              </a>
-              <p class="content__description content__description--location">
-                ?
-              </p>
-            </article>
+                </a>
+                <p class="content__description content__description--location">
+                  ?
+                </p>
+              </article>
+            </a>
           </li>-->
         </ul>
         <div class="location-link-lots">
@@ -134,7 +134,7 @@
           </div>
         </div>
         <div class="about__completion">
-          <h2 id="about_the_auction" class="lots">
+          <h2 id="about_the_auction" class="title">
             Об аукционе
           </h2>
           <div class="completion__article">
@@ -151,7 +151,7 @@
       </section>
     </main>
     <footer>
-      <address class="header__address header__address--location-footer">
+      <address class="address address--footer">
         <a href="tel:+9-999-555-5555">+9 999 555 5555</a>
         <a href="mailto:info@sobaka.ge">info@sobaka.ge</a>
         <p>
@@ -159,9 +159,9 @@
           Амстердам
         </p>
       </address>
-      <nav class="header__nav header__nav--location-footer">
+      <nav class="nav nav--footer">
         <ul class="nav__menu nav__menu--column">
-          <li class="nav__item nav__item--marker-off">
+          <li class="nav__item">
             <a class="active-link" href="#main">
               главная
             </a>
